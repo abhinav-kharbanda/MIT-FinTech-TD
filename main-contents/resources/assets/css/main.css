@@ -97,6 +97,21 @@ ol {
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
+
+.btn-small {
+  border-radius: 50px;
+  font-size: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  color: #fff;
+  background: rgba(124,176,68,1);
+}
+
 .btn:focus {
   color: #fff;
   box-shadow: none;
@@ -1491,6 +1506,13 @@ h1 {
   color: #2d2d2d;
   font-weight: 700;
 }
+
+#contact .title-header-small {
+  font-size: 15px;
+  color: #2d2d2d;
+  font-weight: 700;
+}
+
 #contact .title-header .icon {
   margin-top: 10px;
 }
