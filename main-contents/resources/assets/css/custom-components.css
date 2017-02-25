@@ -51,7 +51,6 @@
    Event location
    ========================================================================== */
 #event {
-  background: url(../img/background/bg-1.jpg);
   background-size: cover;
   position: relative;
 }
@@ -806,7 +805,6 @@ h1 {
    Contact Forem 
    ========================================================================== */
 .main-content {
-  background: url(../img/background/contact-bg.jpg) center;
   background-size: cover;
 }
 #contact .contact-form {

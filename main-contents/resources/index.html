@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   
-    <title>Impression | Bootstrap HTML5 Conference and Event Template</title>
+    <title>TD Employee Portal</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >    
@@ -50,29 +50,19 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="index.html"><img src="assets/img/logo1.png" alt=""></a>
+              <a class="navbar-brand center-block" href="index.html"><img src="assets/img/logo1.png" alt=""></a>
             </div>
             
-            <div class="collapse navbar-collapse" id="navbar">
-              <ul class="nav navbar-nav navbar-right">
+          </div><!-- /container -->
+            <div class="collapse navbar-collapse nav-progress" id="navbar">
+              <ul class="nav navbar-nav">
                 <li class="active"><a href="index.html">Home</a></li>
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" >Pages <span class="caret"></span></a>
-                   <ul class="dropdown-menu">
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="pricing.html">Pricing Table</a></li>
-                    <li><a href="sponsors.html">Sponsors</a></li>
-                    <li><a href="single-post.html">Single Post</a></li>
-                  </ul>
-                </li>                
-                <li><a href="schedule.html">Schedule</a></li>              
-                <li><a href="speakers.html">Speakers</a></li>                
-                <li><a href="blog.html">Blog</a></li>             
-                <li class="animated bounceIn"><a href="pricing.html">Buy Tickets</a></li>                
-                <li><a href="contact.html">Contact</a></li>                
+                <li><a href="schedule.html">User Information</a></li>              
+                <li><a href="speakers.html">Diagnostics</a></li>                
+                <li><a href="blog.html">Product Groups</a></li>             
+                <li><a href="blog.html">Solution Packages</a></li>             
               </ul>
             </div><!-- /navbar-collapse -->
-          </div><!-- /container -->
 
           <!-- Mobile Menu Start -->
           <ul class="wpb-mobile-menu">
@@ -106,8 +96,8 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h2 class="section-title wow fadeInUp" data-wow-delay="0s">Our Sponsors</h2>
-            <p class="section-subcontent wow fadeInUp" data-wow-delay="0.2s">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. A <br> enean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+            <h3 class="section-title wow fadeInUp" data-wow-delay="0s">Purpose for Visit</h3>
+            <p class="section-subcontent wow fadeInUp" data-wow-delay="0.2s"> </p>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="spnsors-logo wow fadeInUp" data-wow-delay="0.1s">
@@ -141,43 +131,63 @@
     <section id="contact">
       <div class="container">
         <div class="row wow fadeInDown" data-wow-delay="0.3s">
-          <div class="col-md-8 col-sm-7 contact-form">   
+          <div class="col-md-12 col-sm-7 contact-form">   
             <form role="form" id="contactForm" data-toggle="validator">  
               <div class="title-header">
-                <h3 class="title-medium pull-left">Send us a message</h3>
+                <h3 class="title-medium pull-left">Personal Information</h3>
                 <div class="icon pull-right"><i class="icon-envelope"></i></div>
               </div>
-              <div class="row">                    
+              <div class="row">       
+              
                 <div class="col-md-6">
                   <div class="label-line">
                     <span class="span"></span>
-                    <label class="label transition">Name</label>
-                    <input type="text" class="input" id="name" required data-error="Please enter your name">
+                    <label class="label transition">First Name</label>
+                    <input type="text" class="input" id="firstname" required data-error="Please enter your first name">
                     <div class="help-block with-errors"></div>
                   </div>
                 </div>
+                
                 <div class="col-md-6">
                   <div class="label-line">
                     <span class="span"></span>
-                    <label class="label transition">Email</label>
-                    <input type="email" class="input" id="email" required data-error="Please enter your email">
+                    <label class="label transition">Last Name</label>
+                    <input type="email" class="input" id="lastname" required data-error="Please enter your last name">
                     <div class="help-block with-errors"></div>
                   </div>
                 </div>
+                
+                <div class="col-md-6">
+                  <div class="label-line">
+                    <span class="span"></span>
+                    <label class="label transition">Date of Birth (mm/dd/yyy)</label>
+                    <input type="email" class="input" id="dateofbirth" required data-error="Please enter your date of birth">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                
+                <div class="col-md-6">
+                  <div class="label-line">
+                    <span class="span"></span>
+                    <label class="label transition">Last 4 of SSN</label>
+                    <input type="email" class="input" id="ssn" required data-error="Please enter the last 4 digits of your SSN">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                
                 <div class="col-md-12">
-                  <div class="label-line textarea">
-                    <span class="span"></span>
-                    <label class="label transition">Message</label>
-                    <textarea id="message" class="input" required data-error="Write your message"></textarea>
-                    <div class="help-block with-errors"></div>
-                  </div>
                   <button type="submit" id="form-submit" class="btn btn-common">Send <i class="icon-paper-plane" aria-hidden="true"></i></button>
                   <div id="msgSubmit" class="h3 text-center hidden"></div>
                   <div class="clearfix"></div>
                 </div>
+                
+                
+                
+                
               </div> 
             </form> 
           </div>  
+          <!--
           <div class="col-md-4 col-sm-5 information">  
               <div class="title-header">
                 <h3 class="title-medium">Contact Information</h3>
@@ -202,7 +212,7 @@
                 <a class="social" href="#" target="_blank"><i class="fa fa-google-plus"></i></a>
                 <a class="social" href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
               </div>
-          </div>
+          </div>-->
         </div>
       </div>
     </section>

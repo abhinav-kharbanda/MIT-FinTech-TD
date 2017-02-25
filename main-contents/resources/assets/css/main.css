@@ -218,6 +218,12 @@ fieldset[disabled] .btn {
 /* ==========================================================================
    Roof Section Start
    ========================================================================== */
+   
+#navbar {
+  margin-top: 70px;
+  text-align: center;
+}
+   
 #roof {
   color: #fff;
   font-size: 14px;
@@ -276,7 +282,7 @@ fieldset[disabled] .btn {
   border-radius: 0;
 }
 .navbar-brand {
-  position: relative;
+  
   padding: 0px 15px;
 }
 .navbar-nav a {
@@ -1427,21 +1433,15 @@ h1 {
 /* ==========================================================================
    Contact Forem 
    ========================================================================== */
-.main-content {
-  background: url(../img/background/contact-bg.jpg) center;
-  background-size: cover;
-}
 #contact .contact-form {
   background: #fff;
   padding: 57px 40px;
-  margin: -254px 0px 200px;
-  max-height: 627px;
+  max-height: 800px;
 }
 #contact .information {
   background: #777777;
   padding: 65px 30px;
-  margin-top: -254px;
-  max-height: 627px;
+  max-height: 800;
 }
 #contact .information .title-medium {
   color: #ffffff !important;
@@ -1486,27 +1486,7 @@ h1 {
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-#contact .social a .fa-twitter:hover {
-  color: #00aced;
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-}
-#contact .social a .fa-google-plus:hover {
-  color: #E91E63;
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-}
-#contact .social a .fa-linkedin:hover {
-  color: #007bb6;
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-}
+
 #contact input {
   display: block;
   width: 100%;
