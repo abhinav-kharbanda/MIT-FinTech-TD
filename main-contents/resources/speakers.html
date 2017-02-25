@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   
-    <title>Impression | Bootstrap HTML5 Conference and Event Template</title>
+    <title>TD Employee Portal</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >    
@@ -26,7 +26,8 @@
     <!-- Owl carousel -->
     <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css">   
     
-
+    <!-- Color CSS Styles  -->
+    <link rel="stylesheet" type="text/css" href="assets/css/colors/default.css" media="screen" /> 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -36,31 +37,10 @@
   </head>
   <body>
 
-    <!-- Header Area wrapper Starts -->
-    <header id="header-wrap">
-      <!-- Roof area Starts -->
-      <div id="roof" class="hidden-xs">
-          <div class="container">
-            <div class="col-md-6 col-sm-6">
-              <div class="info-bar-address">
-                 <i class="icon-location-pin"></i> San Francisco, CA, United States
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-6">
-              <!-- Quick Contacts Starts -->
-              <div class="quick-contacts">
-                  <span><i class="icon-phone"></i> (00) 123 456 789</span>
-                  <span><i class="icon-envelope"></i><a href="#">email@gmail.com</a></span>
-              </div>
-              <!-- Quick Contacts End -->
-            </div>
-          </div>
-      </div>
-      <!-- Roof area End -->
 
       <!-- Nav Menu Section Start -->
       <div class="navigation-menu">
-        <nav class="navbar navbar-default navbar-event" role="navigation" data-spy="affix" data-offset-top="20">
+        <nav class="navbar navbar-default navbar-event" >
           <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header col-md-2">
@@ -70,33 +50,23 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="index.html"><img src="assets/img/logo1.png" alt=""></a>
+              <a class="navbar-brand center-block" href="index.html"><img src="assets/img/logo1.png" alt=""></a>
             </div>
-
-            <div class="collapse navbar-collapse" id="navbar">
-              <ul class="nav navbar-nav navbar-right">
+            
+          </div><!-- /container -->
+            <div class="collapse navbar-collapse nav-progress" id="navbar">
+              <ul class="nav navbar-nav">
                 <li><a href="index.html">Home</a></li>
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" >Pages <span class="caret"></span></a>
-                   <ul class="dropdown-menu">
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="pricing.html">Pricing Table</a></li>
-                    <li><a href="sponsors.html">Sponsors</a></li>
-                    <li><a href="single-post.html">Single Post</a></li>
-                  </ul>
-                </li>                
-                <li><a href="schedule.html">Schedule</a></li>              
-                <li class="active"><a href="speakers.html">Speakers</a></li>                
-                <li><a href="blog.html">Blog</a></li>             
-                <li class=" animated bounceIn"><a href="pricing.html">Buy Tickets</a></li>                
-                <li><a href="contact.html">Contact</a></li>                
+                <li class='active'><a href="schedule.html">Dashboard</a></li>              
+                <li><a href="speakers.html">Diagnostics</a></li>                
+                <li><a href="blog.html">Product Groups</a></li>             
+                <li><a href="blog.html">Solution Packages</a></li>             
               </ul>
             </div><!-- /navbar-collapse -->
-          </div><!-- /container -->
 
           <!-- Mobile Menu Start -->
           <ul class="wpb-mobile-menu">
-            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
             <li><a href="#">Pages</a>
                <ul class="dropdown">
                 <li><a href="about.html">About Us</a></li>
@@ -107,7 +77,7 @@
               </ul>
             </li>                
             <li><a href="schedule.html">Schedule</a></li>              
-            <li class="active"><a href="speakers.html">Speakers</a></li>                
+            <li><a href="speakers.html">Speakers</a></li>                
             <li><a href="blog.html">Blog</a></li>             
             <li><a href="pricing.html">Buy Tickets</a></li>                
             <li><a href="contact.html">Contact</a></li> 
@@ -121,329 +91,61 @@
     </header>
     <!-- Header Area wrapper End -->
 
-    <!-- Page Header Start -->
-    <div class="page-header">      
-      <div class="container"> 
-        <div class="page-header-inner">         
-          <ol class="breadcrumb wow fadeInDown" data-wow-delay="300ms">
-            <li><a href="index.html">Home</a></li>
-            <li class="page">Speakers</li>
-          </ol>
-          <h1 class="page-title wow fadeInRight" data-wow-delay="300ms">
-            Speakers
-          </h1>
-        </div>
-      </div>
-    </div>
-    <!-- Page Header End-->
-
     <!-- Team Area Section Start -->
     <section id="team" class="section gray-bg">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h2 class="section-title wow fadeInUp" data-wow-delay="0s">Others Speakers</h2>
+            <h2 class="section-title wow fadeInUp" data-wow-delay="0s">Dashboard</h2>
           </div> 
+          
           <div class="col-md-6 col-sm-12 col-xs-12">
             <div class="single-member wow fadeInRight" data-wow-delay="0.2s">
               <div class="team-desc">
-                <h3>Jon Doe</h3>
-                <h5>CEO, Peloton Cycle</h5>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. A enean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                <h3>Customer Information</h3>
+                <h5>Customer: {customer name, first/last}</h5>
+                <p></p>
               </div> 
-              <div class="team-img">
-                <img src="assets/img/teacher/team-1.png" alt="">
-                <div class="social-icon">
-                  <a class="social" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                  <a class="social" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                  <a class="social" href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-                  <a class="social" href="#" target="_blank"><i class="fa fa-dribbble"></i></a>
-                  <a class="social" href="#" target="_blank"><i class="fa fa-behance"></i></a>
-                </div>
-              </div>
             </div>
           </div>
+          
+          
           <div class="col-md-6 col-sm-12 col-xs-12">
             <div class="single-member wow fadeInLeft" data-wow-delay="0.2s">
               <div class="team-desc">
-                <h3>Sophia Tailor</h3>
+                <h3>Subject</h3>
                 <h5>Designer at Google</h5>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. A enean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
               </div> 
-              <div class="team-img">
-                <img src="assets/img/teacher/team-2.png" alt="">
-                <div class="social-icon">
-                  <a class="social" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                  <a class="social" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                  <a class="social" href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-                  <a class="social" href="#" target="_blank"><i class="fa fa-dribbble"></i></a>
-                  <a class="social" href="#" target="_blank"><i class="fa fa-behance"></i></a>
-                </div>
-              </div>
             </div>
           </div>
+          
           <div class="col-md-6 col-sm-12 col-xs-12">
-            <div class="single-member wow fadeInRight" data-wow-delay="0.2s">
-              <div class="team-img">
-                <img src="assets/img/teacher/team-3.png" alt="">
-                <div class="social-icon">
-                  <a class="social" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                  <a class="social" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                  <a class="social" href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-                  <a class="social" href="#" target="_blank"><i class="fa fa-dribbble"></i></a>
-                  <a class="social" href="#" target="_blank"><i class="fa fa-behance"></i></a>
-                </div>
-              </div>
+            <div class="single-member wow" data-wow-delay="0.2s">
               <div class="team-desc">
-                <h3>LEO AMBERe</h3>
+                <h3>Flags</h3>
                 <h5>Director, Via</h5>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. A enean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
               </div> 
             </div>
           </div>
+          
           <div class="col-md-6 col-sm-12 col-xs-12">
-            <div class="single-member wow fadeInLeft" data-wow-delay="0.2s">
-              <div class="team-img">
-                <img src="assets/img/teacher/team-4.png" alt="">
-                <div class="social-icon">
-                  <a class="social" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                  <a class="social" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                  <a class="social" href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-                  <a class="social" href="#" target="_blank"><i class="fa fa-dribbble"></i></a>
-                  <a class="social" href="#" target="_blank"><i class="fa fa-behance"></i></a>
-                </div>
-              </div>
+            <div class="single-member wow" data-wow-delay="0.2s">
               <div class="team-desc">
-                <h3>Thomas Kelly</h3>
+                <h3>Additional Information</h3>
                 <h5>Co-founder,theSkimm</h5>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. A enean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
               </div>
             </div>
           </div>
+          
+          
         </div>
       </div>
     </section>
     <!-- Team Area Section End -->
-    
-   <!-- Video Section Start -->
-    <div class="ready-to-play">
-      <video id="bgvid" class="stop" loop>
-        <source src="assets/video/event.webm" type="video/mp4">
-      </video>
-      <div id="polina" class="video-text">
-        <div class="tb-t">
-            <div class="tb-c">
-              <div class="polina"><button><i class='icon-control-play'></i></button></div>
-            </div>
-        </div>
-      </div>
-    </div>
-    <!-- Video Section End -->
-    <!-- Speakers Section Start -->
-    <section id="speakers" class="section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2 class="section-title wow fadeInUp" data-wow-delay="0s">Meet Our Speakers</h2>
-          </div> 
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="speakers-member wow fadeIn" data-wow-delay="0.1s">
-              <div class="member-img">
-                <img src="assets/img/teacher/img-1.png" alt="">
-              </div>
-              <div class="member-desc">
-                <h3>Jon Doe</h3>
-                <h5>CEO, Peloton Cycle</h5>
-                <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
-                <div class="social-icon">
-                  <a class="social" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                  <a class="social" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                  <a class="social" href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-                  <a class="social" href="#" target="_blank"><i class="fa fa-dribbble"></i></a>
-                  <a class="social" href="#" target="_blank"><i class="fa fa-behance"></i></a>
-                </div>
-              </div>              
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="speakers-member wow fadeIn" data-wow-delay="0.3s">
-              <div class="member-img">
-                <img src="assets/img/teacher/img-2.png" alt="">
-              </div>
-              <div class="member-desc">
-                <h3>Natali Aero</h3>
-                <h5>Co-founder, Hometeam</h5>
-                <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
-                <div class="social-icon">
-                  <a class="social" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                  <a class="social" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                  <a class="social" href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-                  <a class="social" href="#" target="_blank"><i class="fa fa-dribbble"></i></a>
-                  <a class="social" href="#" target="_blank"><i class="fa fa-behance"></i></a>
-                </div>
-              </div>              
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="speakers-member wow fadeIn" data-wow-delay="0.5s">
-              <div class="member-img">
-                <img src="assets/img/teacher/img-3.png" alt="">
-              </div>
-              <div class="member-desc">
-                <h3>Leo Amber</h3>
-                <h5>Director, Via</h5>
-                <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
-                <div class="social-icon">
-                  <a class="social" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                  <a class="social" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                  <a class="social" href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-                  <a class="social" href="#" target="_blank"><i class="fa fa-dribbble"></i></a>
-                  <a class="social" href="#" target="_blank"><i class="fa fa-behance"></i></a>
-                </div>
-              </div>              
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="speakers-member wow fadeIn" data-wow-delay="0.7s">
-              <div class="member-img">
-                <img src="assets/img/teacher/img-4.png" alt="">
-              </div>
-              <div class="member-desc">
-                <h3>Jeson Eva</h3>
-                <h5>Co-founder,theSkimm</h5>
-                <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
-                <div class="social-icon">
-                  <a class="social" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                  <a class="social" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                  <a class="social" href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-                  <a class="social" href="#" target="_blank"><i class="fa fa-dribbble"></i></a>
-                  <a class="social" href="#" target="_blank"><i class="fa fa-behance"></i></a>
-                </div>
-              </div>              
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="speakers-member wow fadeIn" data-wow-delay="0.9s">
-              <div class="member-img">
-                <img src="assets/img/teacher/img-5.png" alt="">
-              </div>
-              <div class="member-desc">
-                <h3>Lamba Kureshi</h3>
-                <h5>Senior Professor,Boston University</h5>
-                <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
-                <div class="social-icon">
-                  <a class="social" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                  <a class="social" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                  <a class="social" href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-                  <a class="social" href="#" target="_blank"><i class="fa fa-dribbble"></i></a>
-                  <a class="social" href="#" target="_blank"><i class="fa fa-behance"></i></a>
-                </div>
-              </div>              
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="speakers-member wow fadeIn" data-wow-delay="1s">
-              <div class="member-img">
-                <img src="assets/img/teacher/img-6.png" alt="">
-              </div>
-              <div class="member-desc">
-                <h3>Leo Amber</h3>
-                <h5>CEO, lrisVR</h5>
-                <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
-                <div class="social-icon">
-                  <a class="social" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                  <a class="social" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                  <a class="social" href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-                  <a class="social" href="#" target="_blank"><i class="fa fa-dribbble"></i></a>
-                  <a class="social" href="#" target="_blank"><i class="fa fa-behance"></i></a>
-                </div>
-              </div>              
-            </div>
-          </div> 
-        </div>
-      </div>
-    </section>
-    <!-- Speakers Section End -->
 
-    <!-- Intro Section Start -->
-    <section id="intro" class="section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-sm-8 col-xs-12">
-            <div class="content-text">
-              <h2>ARE YOU READY TO MANAGE YOUR OWN EVENTS?</h2>
-              <p class="text">All of our virtual professionals are highly experienced in the areas in which they work and have been through a thorough recruitment process.</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-4 col-xs-12 text-right">
-            <a href="#" class="btn-cta btn btn-common"><i class="icon-control-play"></i> Sign Up Today</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Intro Section End -->
-
-    <!-- Footer Section Start -->   
-    <footer class="section">  
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-3 col-xs-12">
-            <h3><img src="assets/img/footer-logo.png" alt=""></h3>
-            <p>
-              If you think you have the passion, 
-              attitude and capability to join us 
-              the next big software company
-              s so that we can get the convers.
-            </p>
-          </div>
-          <div class="col-md-3 col-sm-3 col-xs-12">
-            <h3>Support</h3>
-            <ul>
-              <li><a href="#">Support</a></li>
-              <li><a href="#">Docs</a></li>
-              <li><a href="#">Contact Us</a></li>               
-            </ul>
-          </div>
-          <div class="col-md-3 col-sm-3 col-xs-12">
-            <h3>Learn More</h3>
-            <ul>
-              <li><a href="#">How it Works</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Log In</a></li>
-              <li><a href="#">Sign Up</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3 col-sm-3 col-xs-12">
-            <h3>Quick Link</h3>
-            <ul>
-              <li><a href="#">Schedule</a></li>
-              <li><a href="#">Gallery</a></li>
-              <li><a href="#">Team</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Pricing</a></li>
-            </ul>
-          </div>          
-        </div>
-      </div>      
-    </footer>  
-    <!-- Footer Section End -->  
-
-    <!-- Copytight Start -->
-    <section id="copyright">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <p class="copyright-text text-center">
-             ©Designed and Developed by 
-              <a href="http://graygrids.com/">
-                GrayGrids
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section> 
-    <!-- Copytight End -->   
 
     <!-- Go to Top Link -->
     <a href="#header-wrap" class="back-to-top">
