@@ -5,6 +5,26 @@
 /* ==========================================================================
    Global Styles
    ========================================================================== */
+.radio-buttons input[type="radio"] {
+    opacity:0.01;
+    z-index:100;
+}
+.radio-buttons ul {
+  text-align: center;
+}
+
+.radio-buttons ul li {
+  display: inline-block;
+}
+
+.radio-buttons input[type="radio"]:checked + label,
+.Checked + label {
+    background: #347d2b;
+}
+
+
+
+
 body {
   font-size: 15px;
   font-family: 'Roboto', sans-serif;
@@ -1377,8 +1397,9 @@ h1 {
    Pricing Table Style
    ========================================================================== */
 .pricing-table {
+  height: 200px;
   text-align: center;
-  box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 9px 32px rgba(0, 0, 0, 0.1);
   margin: 60px 15px;
   padding: 30px 0px 0px;
   -webkit-transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1) 0s;
@@ -1386,8 +1407,9 @@ h1 {
   -o-transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1) 0s;
   transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1) 0s;
 }
+
 .pricing-table .table-icon {
-  padding: 60px 0 40px;
+  padding: 20px 0 40px;
 }
 .pricing-table .table-icon i {
   font-size: 44px;
@@ -1426,7 +1448,6 @@ h1 {
 }
 .pricing-table:hover,
 .pricing-active {
-  box-shadow: 0px 9px 32px rgba(0, 0, 0, 0.1);
 }
 .pricing-table:hover .button-area,
 .pricing-active .button-area {
