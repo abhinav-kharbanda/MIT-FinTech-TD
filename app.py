@@ -95,7 +95,31 @@ def form_dashboard(name,account_id,purpose):
 
 @app.route("/credit_card_list", methods=['POST'])
 def credit_card_list():
-	
+
+	db = MySQLdb.connect("localhost","root","qwertyuiop","fintech")
+	cursor = db.cursor()
+	sql = "select card_img from credit_cards order by +"+request.form['param_1']+" DESC, "+request.form['param_2']+" DESC;"
+
+	try:
+		rows_count = cursor.execute(sql) 
+		if rows_count > 0:
+			results = cursor.fetchall()
+			return render_template("products.html",card1=results[0],card2=results[1],card3=results[2],card4=results[3],card5=results[4],card6=results[5])
+		else:
+			return "0"
+	except MySQLdb.OperationalError, e:
+		print sql
+		print "SQL operation failed: "
+		print e
+		db.rollback()
+		return form_dashboard(request.form['name'],request.form['account_id'],request.form['purpose'])
+
+# - Cash Rewards
+# - Airline Mile Rewards
+# - Higher points for dining
+# - Higher points for travel
+# - No annual fee
+# - No foreign Transaction Fee
 
 
 
