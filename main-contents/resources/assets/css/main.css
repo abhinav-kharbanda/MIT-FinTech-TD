@@ -250,7 +250,17 @@ fieldset[disabled] .btn {
   font-size: 15px;
 }
 
-.navbar-header {
+.navigation-menu .navbar-default.navbar-event .container 
+{
+  text-align: center !important;
+}
+.navigation-menu .navbar-default.navbar-event .container .navbar-header {
+  display: inline-block !important;
+  float: none !important;
+}
+
+.navigation-menu .navbar-default.navbar-event .nav-progress.navbar-collapse .navbar-nav
+{
   display: inline-block !important;
   float: none !important;
 }
