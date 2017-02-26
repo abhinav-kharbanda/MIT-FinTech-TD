@@ -60,7 +60,7 @@
                 <li><a href="dashboard.html">Dashboard</a></li>              
                 <li><a href="diagnostics.html">Diagnostics</a></li>
                 <li><a href="preferences.html">Preferences</a></li>                
-                <li><a href="blog.html">Product Groups</a></li>             
+                <li><a href="products.html">Products</a></li>             
                 <li><a href="blog.html">Solution Packages</a></li>             
               </ul>
             </div><!-- /navbar-collapse -->
@@ -136,15 +136,13 @@
             <form role="form" id="contactForm" data-toggle="validator">  
               <div class="title-header">
                 <h3 class="title-medium pull-left">Personal Information</h3>
-                <div class="icon pull-right"><i class="icon-envelope"></i></div>
               </div>
               <div class="row">       
-              
                 <div class="col-md-6">
                   <div class="label-line">
                     <span class="span"></span>
-                    <label class="label transition">First Name</label>
-                    <input type="text" class="input" id="firstname" required data-error="Please enter your first name">
+                    <label class="label transition">Full Name</label>
+                    <input type="text" class="input" id="name" name='name' required data-error="Please enter your full legal name">
                     <div class="help-block with-errors"></div>
                   </div>
                 </div>
@@ -152,32 +150,14 @@
                 <div class="col-md-6">
                   <div class="label-line">
                     <span class="span"></span>
-                    <label class="label transition">Last Name</label>
-                    <input type="email" class="input" id="lastname" required data-error="Please enter your last name">
-                    <div class="help-block with-errors"></div>
-                  </div>
-                </div>
-                
-                <div class="col-md-6">
-                  <div class="label-line">
-                    <span class="span"></span>
-                    <label class="label transition">Date of Birth (mm/dd/yyy)</label>
-                    <input type="email" class="input" id="dateofbirth" required data-error="Please enter your date of birth">
-                    <div class="help-block with-errors"></div>
-                  </div>
-                </div>
-                
-                <div class="col-md-6">
-                  <div class="label-line">
-                    <span class="span"></span>
-                    <label class="label transition">Last 4 of SSN</label>
-                    <input type="email" class="input" id="ssn" required data-error="Please enter the last 4 digits of your SSN">
+                    <label class="label transition">Account ID</label>
+                    <input type="text" class="input" id="name" name='acc_id' required data-error="Please enter your account id">
                     <div class="help-block with-errors"></div>
                   </div>
                 </div>
                 
                 <div class="col-md-12">
-                  <button type="submit" id="form-submit" class="btn btn-common">Send <i class="icon-paper-plane" aria-hidden="true"></i></button>
+                  <button type="submit" id="form-submit" class="btn btn-common">Submit <i class="icon-paper-plane" aria-hidden="true"></i></button>
                   <div id="msgSubmit" class="h3 text-center hidden"></div>
                   <div class="clearfix"></div>
                 </div>
