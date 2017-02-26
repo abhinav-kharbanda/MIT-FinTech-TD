@@ -61,7 +61,7 @@ ol {
   list-style: none;
 }
 .section {
-  padding: 60px 0;
+  padding: 20px;
 }
 .section-title {
   color: #2d2d2d;
@@ -235,7 +235,7 @@ fieldset[disabled] .btn {
    ========================================================================== */
    
 #navbar {
-  margin-top: 70px;
+  margin-top: 50px;
   text-align: center;
 }
    
@@ -288,7 +288,7 @@ fieldset[disabled] .btn {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 .navbar {
-  margin-bottom: 0;
+  margin-bottom: 0px;
 }
 
 .navbar-default .navbar-nav > .active > a,
@@ -305,7 +305,9 @@ fieldset[disabled] .btn {
   border-radius: 0;
 }
 .navbar-brand {
-  
+  left: -25%;
+  position: relative;
+  margin-top: 10px;
   padding: 0px 15px;
 }
 .navbar-nav a {
@@ -360,17 +362,23 @@ fieldset[disabled] .btn {
 .navbar-default .navbar-nav .active > a:before {
   width: 100%;
 }
+
+.nav .active {
+    border-radius: 0px !important;
+
+}
+
+
 .navbar-event {
   background: #fff;
 }
 .navbar-event .navbar-nav li a {
   color: #222222;
   padding: 0 20px;
-  margin-right: 1px;
+  margin-right: 0px;
   margin-top: 20px;
-  margin-bottom: 20px;
   line-height: 40px;
-  border-radius: 50px;
+  border-radius: 0px;
 }
 .navbar-event .navbar-nav li a:before {
   display: none;
@@ -1764,6 +1772,23 @@ footer ul li a {
 #intro .btn-cta i {
   margin-right: 5px;
 }
+
+.navigation-menu .navbar-default.navbar-event .container 
+{
+  text-align: center !important;
+}
+.navigation-menu .navbar-default.navbar-event .container .navbar-header {
+  display: inline-block !important;
+  float: none !important;
+}
+
+.navigation-menu .navbar-default.navbar-event .nav-progress.navbar-collapse .navbar-nav
+{
+  display: inline-block !important;
+  float: none !important;
+}
+
+
 /* ==========================================================================
    Blog Componet
    ========================================================================== */
