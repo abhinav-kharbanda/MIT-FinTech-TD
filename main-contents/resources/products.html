@@ -58,9 +58,9 @@
               <ul class="nav navbar-nav">
                 <li class='active'><a href="home.html">Home</a></li>
                 <li class='active'><a href="dashboard.html">Dashboard</a></li>              
-                <li class='active'><a href="diagnostics.html">Diagnostics</a></li>
-                <li><a href="preferences.html">Preferences</a></li>                
-                <li><a href="products.html">Products</a></li>             
+                <li class='active'><a href="diagnostics.html">Diagnostics</a></li>    
+                <li class='active'><a href="preferences.html">Preferences</a></li>                
+                <li class='active'><a href="products.html">Products</a></li>             
                 <li><a href="blog.html">Solution Packages</a></li>             
               </ul>
             </div><!-- /navbar-collapse -->
@@ -97,57 +97,38 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h3 class="section-title wow fadeInUp" data-wow-delay="0s">Diagnostics:</h3>
+            <h3 class="section-title wow fadeInUp" data-wow-delay="0s">Preferences:</h3>
           </div>
-          
           <div class="col-md-12 col-sm-4 col-xs-12">
             <div class="pricing-table wow fadeInLeft" data-wow-delay="0.3s">
-              <h4> Are you making purchases that are...</h4>
+              <h4> What are the top two features you're looking for in this card?</h4>
+              
              <div class='button-area radio-buttons'>
               <ul>
                 <li>
-                    <input type="radio" id="recurring" name="first" />
-                    <label for="recurring" class='btn btn-common'>Recurring</label>
+                    <input type="radio" id="cashrewards" name="cashrewards" />
+                    <label for="cashrewards" class='btn btn-common'>Cash Rewards</label>
+                </li>
+                
+                <li>
+                    <input type="radio" id="airmiles" name="airmiles" />
+                    <label for="airmiles" class='btn btn-common'>Airline Mile Rewards</label>
                 </li>
                 <li>
-                    <input type="radio" id="specific" name="first" />
-                    <label for="specific" class='btn btn-common'>Specific</label>
-                </li>
-              </ul>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-md-6 col-sm-4 col-xs-12">
-            <div class="pricing-table wow fadeInLeft" data-wow-delay="0.3s">
-              <h4> Are you making purchases that are...</h4>
-             <div class='button-area radio-buttons'>
-              <ul>
-                <li>
-                    <input type="radio" id="large" name="second" />
-                    <label for="large" class='btn btn-common'>Large</label>
+                    <input type="radio" id="diningpts" name="diningpts" />
+                    <label for="diningpts" class='btn btn-common'>More points on dining</label>
                 </li>
                 <li>
-                    <input type="radio" id="small" name="second" />
-                    <label for="small" class='btn btn-common'>Small</label>
-                </li>
-              </ul>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-md-6 col-sm-4 col-xs-12">
-            <div class="pricing-table wow fadeInLeft" data-wow-delay="0.3s">
-              <h4> Would you make payments that are...</h4>
-             <div class='button-area radio-buttons'>
-              <ul>
-                <li>
-                    <input type="radio" id="immediate" name="third" />
-                    <label for="immediate" class='btn btn-common'>Immediate</label>
+                    <input type="radio" id="travelpts" name="travelpts" />
+                    <label for="travelpts" class='btn btn-common'>More points on travel</label>
                 </li>
                 <li>
-                    <input type="radio" id="installments" name="third" />
-                    <label for="installments" class='btn btn-common'>Installments</label>
+                    <input type="radio" id="nofees" name="nofees" />
+                    <label for="nofees" class='btn btn-common'>No annual fee</label>
+                </li>
+                <li>
+                    <input type="radio" id="notransac-fee" name="notransac-fee" />
+                    <label for="notransac-fee" class='btn btn-common'>No foreign transaction fee</label>
                 </li>
               </ul>
               </div>
