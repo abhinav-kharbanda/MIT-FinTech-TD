@@ -27,6 +27,10 @@
 }
 
 
+td {
+  padding:0 15px 0 15px;
+}
+
 
 
 body {
@@ -1296,11 +1300,21 @@ h1 {
   transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1) 0s;
 }
 #team .team-desc-2 {
-  height: 500px;
+  height: 450px;
   padding-top: 20px;
   padding-right: 20px;
   padding-left: 20px;
   float: left;
+}
+
+#team .team-desc-2 h3 {
+  text-align: left;
+  font-size: 22px;
+  font-weight: 400;
+}
+#team .team-desc-2 h5 {
+  font-size: 14px;
+  font-weight: 400; 
 }
 
 #team .team-desc {
