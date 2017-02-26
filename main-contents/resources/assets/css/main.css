@@ -61,7 +61,7 @@ ol {
   list-style: none;
 }
 .section {
-  padding: 60px 0;
+  padding: 20px;
 }
 .section-title {
   color: #2d2d2d;
@@ -97,6 +97,21 @@ ol {
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
+
+.btn-small {
+  border-radius: 50px;
+  font-size: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  color: #fff;
+  background: rgba(124,176,68,1);
+}
+
 .btn:focus {
   color: #fff;
   box-shadow: none;
@@ -220,7 +235,7 @@ fieldset[disabled] .btn {
    ========================================================================== */
    
 #navbar {
-  margin-top: 70px;
+  margin-top: 50px;
   text-align: center;
 }
    
@@ -283,7 +298,7 @@ fieldset[disabled] .btn {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 .navbar {
-  margin-bottom: 0;
+  margin-bottom: 0px;
 }
 
 .navbar-default .navbar-nav > .active > a,
@@ -300,7 +315,9 @@ fieldset[disabled] .btn {
   border-radius: 0;
 }
 .navbar-brand {
-  
+  left: -25%;
+  position: relative;
+  margin-top: 10px;
   padding: 0px 15px;
 }
 .navbar-nav a {
@@ -355,17 +372,23 @@ fieldset[disabled] .btn {
 .navbar-default .navbar-nav .active > a:before {
   width: 100%;
 }
+
+.nav .active {
+    border-radius: 0px !important;
+
+}
+
+
 .navbar-event {
   background: #fff;
 }
 .navbar-event .navbar-nav li a {
   color: #222222;
   padding: 0 20px;
-  margin-right: 1px;
+  margin-right: 0px;
   margin-top: 20px;
-  margin-bottom: 20px;
   line-height: 40px;
-  border-radius: 50px;
+  border-radius: 0px;
 }
 .navbar-event .navbar-nav li a:before {
   display: none;
@@ -1501,6 +1524,13 @@ h1 {
   color: #2d2d2d;
   font-weight: 700;
 }
+
+#contact .title-header-small {
+  font-size: 15px;
+  color: #2d2d2d;
+  font-weight: 700;
+}
+
 #contact .title-header .icon {
   margin-top: 10px;
 }
@@ -1752,6 +1782,23 @@ footer ul li a {
 #intro .btn-cta i {
   margin-right: 5px;
 }
+
+.navigation-menu .navbar-default.navbar-event .container 
+{
+  text-align: center !important;
+}
+.navigation-menu .navbar-default.navbar-event .container .navbar-header {
+  display: inline-block !important;
+  float: none !important;
+}
+
+.navigation-menu .navbar-default.navbar-event .nav-progress.navbar-collapse .navbar-nav
+{
+  display: inline-block !important;
+  float: none !important;
+}
+
+
 /* ==========================================================================
    Blog Componet
    ========================================================================== */
