@@ -35,55 +35,74 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+   <body>
+
+
+      <!-- Nav Menu Section Start -->
+      <div class="navigation-menu">
+        <nav class="navbar navbar-default navbar-event" >
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header col-md-2">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand center-block" href="/"><img src="/static/assets/img/logo1.png" alt=""></a>
+            </div>
+            
+          </div><!-- /container -->
+            <div class="collapse navbar-collapse nav-progress" id="navbar">
+              <ul class="nav navbar-nav">
+                <li class='active'><a href="/">Home</a></li>
+                <li class='active'><a href="/">Dashboard</a></li>              
+                <li class='active'><a href="/diagnostics">Diagnostics</a></li>
+                 <li class='active'><a href="/diagnostics">Preferences</a></li>                
+                 <li class='active'><a href="/diagnostics">Products</a></li>             
+                <li class='active'><a href="/diagnostics">Solution Packages</a></li>         
+              </ul>
+            </div><!-- /navbar-collapse -->
+
+          <!-- Mobile Menu Start -->
+          <ul class="wpb-mobile-menu">
+            <li><a href="index">Home</a></li>
+            <li><a href="#">Pages</a>
+               <ul class="dropdown">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="pricing.html">Pricing Table</a></li>
+                <li><a href="sponsors.html">Sponsors</a></li>
+                <li><a href="single-post.html">Single Post</a></li>
+              </ul>
+            </li>                
+            <li><a href="schedule.html">Schedule</a></li>              
+            <li><a href="speakers.html">Speakers</a></li>                
+            <li><a href="blog.html">Blog</a></li>             
+            <li><a href="pricing.html">Buy Tickets</a></li>                
+            <li><a href="contact.html">Contact</a></li> 
+           </ul>
+          <!-- Mobile Menu End -->
+
+        </nav>
+      </div>
+      <!-- Nav Menu Section End -->
+    </header>
+
+
 
     <!-- Pricing Table Section Start -->
-  	<div id="overlay_logo">
-  		<img src="/static/assets/img/logo1.png" alt="">
-  		<div>Welcome to TD Bank!</div>
-  	</div>
-      <!-- Pricing Table Section Start -->
     <section id="pricing" class="section">
       <div class="container">
-        
         <div class="row">
-          <div class="col-md-12">
-            <h2 class="section-title wow fadeInUp" data-wow-delay="0s">Customer Type</h2>
-            <p class="section-subcontent wow fadeInUp" data-wow-delay="0.2s"></p>
+          <div class="col-md-12 text-center">
+            <img src='/static/assets/img/graph.png'>
           </div>
-          
-          <div class="col-md-6 col-sm-4 col-xs-12">
-            <div class="pricing-table wow fadeInLeft" data-wow-delay="0.3s">
-              <div class="table-icon">
-                <i class="icon-user"></i>
-              </div>
-              <div class="button-area">
-                <br>
-                <form method="POST" action="/">
-                <button type="submit" name="existing" value="False" class="btn btn-common">Prospective Customer</button>
-              </div>
-            </div>
-          </div>
-
-          
-          <div class="col-md-6 col-sm-4 col-xs-12">
-            <div class="pricing-table wow fadeInRight" data-wow-delay="0.3s">
-              <div class="table-icon">
-                <i class="icon-lock"></i>
-              </div>
-              <div class="button-area">
-                <br>
-                <button type="submit" name="existing" value="True" class="btn btn-common"> Existing Customer</button>
-              </div>
-              </form>
-            </div>
-          </div>
-          
         </div>
       </div>
     </section>
-
-     
+    <!-- Pricing Table Section End -->
 
     <!-- jQuery Load -->    
     <script src="/static/assets/js/jquery.min.js"></script>
@@ -101,30 +120,15 @@
     <script src="/static/assets/js/jquery.slicknav.js"></script>
     <!--  Nivo lightbox Js -->
     <script src="/static/assets/js/nivo-lightbox.js"></script>   
-    <!-- Contact Form Scripts --> 
+    <!-- Contact Form Scripts -->
+    <script src="/static/assets/js/form-validator.min.js"></script>  
+    <script src="/static/assets/js/contact-form-script.js"></script>    
  
     <!-- All Js plugin -->
     <script src="/static/assets/js/main.js"></script> 
     <!-- Map JS -->
     <script type="text/javascript" src="/static/assets/js/jquery.mapit.min.js"></script>
     <script src="/static/assets/js/initializers.js"></script>
-
-        <script type="text/javascript">
-    	$(document).ready(function(){
-    		$("#form-submit").on("click",function(){
-    			$("#contactForm").submit();
-
-    		})
-
-    		$("#overlay_logo img").delay(200).fadeOut(300,function(){
-    			$("#overlay_logo div").fadeIn(500,function(){
-    				$("#overlay_logo").delay(1000).fadeOut(600);
-    			});	
-    		});
-    		
-    		
-    	})
-    </script>
 
   </body>
 </html>

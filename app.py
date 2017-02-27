@@ -9,7 +9,7 @@ app = Flask(__name__)
 def index():
 	if request.method == 'POST':
 		if (request.form['employee_name'] == "bernard.store@gmail.com" and request.form['employee_password'] == "storeGmail7@ber"):
-			return render_template("customer_choice.html")
+			return render_template("status.html")
 
 		else:
 			return render_template("index.html",error=True)	
@@ -18,14 +18,14 @@ def index():
 
 
 #login_employee -> choose customer
-@app.route("/customer_choice", methods=['GET', 'POST'])
+@app.route("/status", methods=['GET', 'POST'])
 def user_identification():
 	if request.method == 'POST':
 		existing = False if request.form['existing'] == 'False' else True
-		return render_template("ask_user_basic_info.html", existing_customer=existing)
+		return render_template("home.html", existing_customer=existing)
 
 	else:
-		return render_template("customer_choice.html")
+		return render_template("status.html")
 
  
 @app.route("/user_login",methods=['POST'])
@@ -51,7 +51,7 @@ def user_login():
         print "SQL operation failed: "
         print e
         db.rollback()
-        return render_template("customer_choice.html")
+        return render_template("status.html")
 
 
 
